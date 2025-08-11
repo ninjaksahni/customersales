@@ -306,13 +306,4 @@ if not plot_df.empty:
 else:
     st.error("No city coordinates available to display on the map. Consider installing geopy (`pip install geopy`) and retrying.")
 
-st.markdown(
-    """
-    ----
-    **Notes:**
-    - The app first uses a local database of common Indian city coordinates for instant, offline plotting.
-    - If a city isn't found locally the app attempts to use OpenStreetMap's Nominatim via `geopy`. This requires internet access and the `geopy` Python package.
-    - To enable online geocoding: `pip install geopy`.
-    - Geocoding requests are rate-limited (small delay) and cached to avoid repeated queries.
-    """
-)
+
